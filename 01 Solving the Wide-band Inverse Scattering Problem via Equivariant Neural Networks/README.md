@@ -14,9 +14,7 @@ Presentation based on the original paper https://arxiv.org/abs/2212.06068 by Bor
 		- $\Lambda^{\omega}(\mathbf{s}, \mathbf{r})$ - data for probing waves with frequency $\omega$
 	- Forward problem: given $\eta(\mathbf{x}) = n(\mathbf{x}) - 1$ ($n$ is a refractive index), compute $\Lambda^{\omega} = \mathcal{F}^{\omega}(\eta)$ 
 	- **Inverse problem**: infer $\mathcal{F}^\omega$ from measured data $\Lambda^{\omega}$
-	  $$
-      \eta^{*} = \mathcal{F}^{-1}(\{ \Lambda^{\omega} \}_{\omega \in \bar{\Omega}})
-	$$
+$$\eta^{*} = \mathcal{F}^{-1}(\{ \Lambda^{\omega} \}_{\omega \in \bar{\Omega}})$$
 - Linearization and filtered back-projection (baseline algorithm)
 	$$\eta^* = ((F^{\omega})^* \cdot F^{\omega} + \varepsilon I )^{-1}(F^\omega)^* \Lambda^{\omega}$$ 
 	- Back-scattering operator $(F^\omega)^*$, rotation equivariant
